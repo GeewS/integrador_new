@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+}
+
+/* Seção de boas-vindas */
+.welcomeSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 96px;
+    background-color: #ffffff;
+}
+
+.welcomeText {
+    font-size: 48px;
+    font-weight: 400;
+    color: #222;
+}
+
+.welcomeSection img {
+    width: 480px;
+    max-width: 100%;
+}
+
+/* Seção de opções */
+.optionsSection {
+    padding: 48px 96px;
+    margin-bottom: 48px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.optionsTitle {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: #111;
+    text-align: center;
+}
+
+/* Cartão interativo */
+.cardGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card {
+    border: 2px solid #d10000;
+    border-radius: 20px;
+    padding: 32px;
+    width: 350px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fdfdfd;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 80px;
+    color: #ff4f0f;
+    margin-bottom: 32px;
+}
+
+.card button {
+    background-color: #fff;
+    border: 2px solid #d10000;
+    padding: 13px 16px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #d10000;
+    color: white;
+}

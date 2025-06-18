@@ -1,0 +1,167 @@
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../assets/img/senai.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+/* Caixa principal */
+.box {
+    display: flex;
+    height: 590px;
+    width: 1020px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Lado esquerdo com a logo */
+.left {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.logo {
+    width: 450px;
+    padding: 40px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Lado direito com o formulário */
+.right {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+/* Títulos */
+.title {
+    color: #d10000;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #586273;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.inputGroup label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+.inputGroup input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputGroup input:focus {
+    border-color: #d10000;
+}
+
+/* Área de senha */
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.passwordWrapper input {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.eyeButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eyeButton:hover {
+    opacity: 0.7;
+}
+
+/* Mensagem de erro ou sucesso */
+.message {
+    color: #d10000;
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Botões */
+.primaryButton {
+    background-color: #d10000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.primaryButton:hover {
+    background-color: #b30000;
+}
+
+.secondaryButton {
+    background-color: white;
+    color: #d10000;
+    padding: 10px;
+    border: 1px solid #d10000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.secondaryButton:hover {
+    background-color: #f9f9f9;
+}

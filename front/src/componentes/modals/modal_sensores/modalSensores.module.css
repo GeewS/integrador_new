@@ -1,0 +1,125 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+  
+/* Caixa da modal */
+.modal {
+    background-color: #f9f9f9; 
+    padding: 30px 30px 60px 30px;
+    border-radius: 12px;
+    width: 460px;
+    max-width: 90vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 25px rgba(209, 0, 0, 0.2); 
+}
+  
+
+.modal h2 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #D10000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+/* Botão fechar*/
+.closeButton {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    color: #D10000;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.closeButton:hover {
+    color: #a80000;
+}
+  
+/* Inputs */
+input {
+    padding: 12px 14px;
+    margin-bottom: 25px;
+    border: 2px solid #D10000;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    outline-offset: 2px;
+    transition: border-color 0.3s ease;
+    background-color: white;
+}
+
+input:focus {
+    border-color: #a80000;
+}
+
+label {
+    font-size: 15px;
+    color: #000;
+}
+  
+/* Botão salvar */
+.submitButton {
+    background-color: #D10000;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+.submitButton:hover {
+    background-color: #a80000;
+    transform: scale(1.05);
+}
+
+.select {
+    padding: 12px 14px;
+    margin-bottom: 25px;
+    border: 2px solid #D10000;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10'%3E%3Cpath fill='%23D10000' d='M7 10L0 0h14L7 10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px 10px;
+}
+  
+.select:focus {
+    border-color: #a80000;
+}
+  
+
+/* erros  */
+.error {
+  color: #d10000;
+  font-size: 14px;
+  margin-top: -16px;
+  margin-bottom: 16px;
+  padding-left: 2px;
+}
