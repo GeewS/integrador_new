@@ -1,4 +1,4 @@
-**OBS: Esta com o usuário da nicole pois enviei pelo PC dela aqui na Bosch**
+**OBS: Esta com o usuário da nicole pois enviei pelo PC dela*
 
 # 🚀 Smart Senai
 
