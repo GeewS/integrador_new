@@ -39,7 +39,7 @@ O frontend estará rodando em:
 
 ## 👤 Autor
 
-- Desenvolvido por Geovana Silva
+- Desenvolvido por Geovana de Carvalho da Silva DS-12
 
 ## 🚫 Licença
 
